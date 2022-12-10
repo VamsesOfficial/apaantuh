@@ -415,9 +415,7 @@ klik https://wa.me/${botNumber.split`@`[0]}`, m, { mentions: [roof.p, roof.p2] }
 
 // CASE HENTAI 
 case 'animeneko': {
-if (!isPremium) return hisoka.sendMessage(m.chat, { text: `_Please register your number first so you can use this bot._\n\n_How to register by contacting the owner. You can click the owner number below_`, templateButtons: [
-{ urlButton: { displayText: `Contact`, url: `https://wa.me/66899990000?text=hai`}},
-]})
+if (!isPremium) return m.reply(`_Please register your number first so you can use this bot._`)
  waifudd = await axios.get(`https://waifu.pics/api/nsfw/neko`)
 var wbuttsss = [
 {buttonId: `.${command}`, buttonText: {displayText: `Next`}, type: 1},
@@ -433,9 +431,7 @@ hisoka.sendMessage(m.chat, buttonsNekoMessages,{ quoted:m }).catch(err => { retu
 }
 break
 case 'hentaividios': case 'hentaivideo': {
-if (!isPremium) return hisoka.sendMessage(m.chat, { text: `_Please register your number first so you can use this bot._\n\n_How to register by contacting the owner. You can click the owner number below_`, templateButtons: [
-{ urlButton: { displayText: `Contact`, url: `https://wa.me/66899990000?text=hai`}},
-]})
+if (!isPremium) return m.reply(`_Please register your number first so you can use this bot._`)
 m.reply(global.mess.wait)
 anu = await hentai()
 result912 = anu[Math.floor(Math.random(), anu.length)]
@@ -443,10 +439,7 @@ hisoka.sendMessage(m.chat, { video: { url: result912.video_1 }, caption: `${glob
             }
 break
 case 'waifu': {
-if (!isPremium) return hisoka.sendMessage(m.chat, { text: `_Please register your number first so you can use this bot._\n\n_How to register by contacting the owner. You can click the owner number below_`, templateButtons: [
-{ urlButton: { displayText: `Contact`, url: `https://wa.me/66899990000?text=hai`}},
-]})
-
+if (!isPremium) return m.reply(`_Please register your number first so you can use this bot._`)
  waifudd = await axios.get(`https://api.waifu.pics/sfw/waifu`)
 var wbuttsss = [
 {buttonId: `.${command}`, buttonText: {displayText: `Next`}, type: 1},
@@ -463,9 +456,7 @@ let buttonsTsMessages = {
 break
 
 case 'nowa': {
-if (!isPremium) return hisoka.sendMessage(m.chat, { text: `_Please register your number first so you can use this bot._\n\n_How to register by contacting the owner. You can click the owner number below_`, templateButtons: [
-{ urlButton: { displayText: `Contact`, url: `https://wa.me/66899990000?text=hai`}},
-]})
+if (!isPremium) return m.reply(`_Please register your number first so you can use this bot._`)
 if (!args[0]) return m.reply(`Kirim perintah ${prefix+command} <nomer>`)
 var noteks = args[0]
 if (!noteks.includes('x')) return m.reply('lah?')
